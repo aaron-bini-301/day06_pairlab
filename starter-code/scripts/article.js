@@ -24,11 +24,11 @@ Article.prototype.toHtml = function() {
   return template(this);
 };
 
-// DONE: There are some other functions that also relate to articles across the board, rather than
+// TODO (DONE): There are some other functions that also relate to articles across the board, rather than
 // just single instances. Object-oriented programming would call these "class-level" functions,
 // that are relevant to the entire "class" of objects that are Articles.
 
-// DONE: This function will take the rawData, how ever it is provided,
+// TODO (DONE): This function will take the rawData, how ever it is provided,
 // and use it to instantiate all the articles. This code is moved from elsewhere, and
 // encapsulated in a simply-named function for clarity.
 Article.loadAll = function(rawData) {
@@ -51,9 +51,9 @@ Article.fetchAll = function() {
     Article.loadAll(//DONE: What do we pass in here to the .loadAll function?
       JSON.parse(rawData)
     );
-    articleView.initIndexPage(); //DONE: Change this fake method call to the correct one that will render the index page.
+    articleView.initIndexPage(); //TODO (DONE): Change this fake method call to the correct one that will render the index page.
   } else {
-    // DONE: When we don't already have the rawData in local storage, we need to get it from the JSON file,
+    // TODO (DONE): When we don't already have the rawData in local storage, we need to get it from the JSON file,
     //       which simulates data on a remote server. Run live-server or pushstate-server!
     //       Please do NOT browse to your HTML file(s) using a "file:///" link. RUN A SERVER INSTEAD!!
     var articleJSON = [];
